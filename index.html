@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BugBountyIntel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #0f172a;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col">
+    <header class="p-4 shadow-md bg-gradient-to-r from-purple-800 to-indigo-900">
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold tracking-wide">BugBountyIntel</h1>
+        <nav>
+          <a href="#" class="text-sm px-3 hover:underline">Home</a>
+          <a href="#" class="text-sm px-3 hover:underline">About</a>
+          <a href="#" class="text-sm px-3 hover:underline">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-10">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4">ابحث عن تقارير Bug Bounty من أفضل الهاكرز</h2>
+        <p class="text-gray-300 mb-6">من HackerOne و Bugcrowd و منصات أخرى</p>
+        <input
+          type="text"
+          placeholder="ابحث عن XSS أو RCE أو اسم هاكر..."
+          class="w-full p-3 rounded-xl bg-slate-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-600"
+        />
+      </div>
+
+      <section class="mt-10">
+        <h3 class="text-xl font-semibold mb-4">أحدث التقارير</h3>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div class="bg-slate-800 p-5 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="text-lg font-bold">XSS in ExampleApp</h4>
+            <p class="text-sm text-gray-400">اكتشفه: HackerJoe | منصة: HackerOne</p>
+            <a href="#" class="text-purple-400 text-sm mt-2 inline-block hover:underline">اقرأ التقرير</a>
+          </div>
+          <div class="bg-slate-800 p-5 rounded-xl shadow hover:shadow-lg transition">
+            <h4 class="text-lg font-bold">RCE via File Upload in TestCorp</h4>
+            <p class="text-sm text-gray-400">اكتشفه: BugMaster | منصة: Bugcrowd</p>
+            <a href="#" class="text-purple-400 text-sm mt-2 inline-block hover:underline">اقرأ التقرير</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-900 py-6 text-center text-gray-500 text-sm">
+      &copy; 2025 BugBountyIntel. جميع الحقوق محفوظة.
+    </footer>
+  </body>
+</html>
